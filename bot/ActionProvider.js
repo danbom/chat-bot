@@ -57,6 +57,14 @@ class ActionProvider {
       }));
     } catch (error) {
       console.log(error);
+      // eslint-disable-next-line operator-linebreak
+      const message =
+        this.createChatbotMessage("검색 내용을 찾을 수 없습니다!");
+
+      this.setState((prev) => ({
+        ...prev,
+        messages: [...prev.messages, message],
+      }));
     }
   };
 
