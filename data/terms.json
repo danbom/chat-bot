@@ -1,0 +1,406 @@
+[
+  {
+    "term": "ADME",
+    "meaning": "\"Absorption, Distribution, Metabolism, and Excretion\"의 줄임말이며 흡수, 분포, 대사 및 배설을 의미합니다."
+  },
+  {
+    "term": "ADE",
+    "meaning": "\"Adverse Drug Experience\"의 줄임말이며 약물 부작용 경험을 의미합니다."
+  },
+  {
+    "term": "ADR",
+    "meaning": "\"Adverse Drug Reaction\"의 줄임말이며 약물 이상반응을 의미합니다."
+  },
+  {
+    "term": "AE",
+    "meaning": "\"Adverse Event\"의 줄임말이며 부작용, 임상시험용 의약품 투여 후 시험 대상자에게 발생한 모든 유해한 의도치 않은 증후를 의미합니다."
+  },
+  {
+    "term": "BID",
+    "meaning": "\"bis in die (Twice a Day)\"의 줄임말이며 하루에 두번을 의미합니다."
+  },
+  {
+    "term": "BLA",
+    "meaning": "\"Biologics Licensing Application\"의 줄임말이며 생물의약품 허가 신청을 의미합니다."
+  },
+  {
+    "term": "BLS",
+    "meaning": "\"Biologics Licensing Supplement\"의 줄임말이며 생물의약품 라이선스 보충자료를 의미합니다."
+  },
+  {
+    "term": "CAP",
+    "meaning": "\"College of American Pathologists\"의 줄임말이며 미국 병리학자 대학을 의미합니다."
+  },
+  {
+    "term": "CAPA",
+    "meaning": "\"Corrective Action and Preventive Action\"의 줄임말이며 시정 조치 및 재발 방지 조치, 발견된 부적합 또는 기타 바람직하지 않은 상황에서의 원인을 분석하여 시정조치하고, 추후 유사한 사례에 대한 재발을 방지하기 위한 요구사항을 정의한 문서를 의미합니다."
+  },
+  {
+    "term": "CBER",
+    "meaning": "\"Center for Biologics Research and Evaluation\"의 줄임말이며 생물학 연구 및 평가 센터를 의미합니다."
+  },
+  {
+    "term": "CDAlR",
+    "meaning": "\"Clinical Data Analyst/Reviewer\"의 줄임말이며 임상 데이터 분석가/검토를 의미합니다."
+  },
+  {
+    "term": "COER",
+    "meaning": "\"Center for Drug Evaluation and Research\"의 줄임말이며 약물평가 연구센터를 의미합니다."
+  },
+  {
+    "term": "COM",
+    "meaning": "\"Clinical Data Manager I Management\"의 줄임말이며 임상데이터 관리자 | 관리를 의미합니다."
+  },
+  {
+    "term": "CDRH",
+    "meaning": "\"Center for Device and Radiological Health\"의 줄임말이며 장치 및 방사선 건강센터를 의미합니다."
+  },
+  {
+    "term": "CFR",
+    "meaning": "\"Code of Federal Regulations\"의 줄임말이며 연방규정 코드를 의미합니다."
+  },
+  {
+    "term": "CLiA",
+    "meaning": "\"Clinical Laboratory Improvement Act\"의 줄임말이며 임상검사실 개선법을 의미합니다."
+  },
+  {
+    "term": "CNDA",
+    "meaning": "\"Computer Assisted New Drug Application\"의 줄임말이며 컴퓨터 지원 신약 신청을 의미합니다."
+  },
+  {
+    "term": "CNS",
+    "meaning": "\"Central Nervous System\"의 줄임말이며 중추 신경계를 의미합니다."
+  },
+  {
+    "term": "COV",
+    "meaning": "\"Close Out Visit\"의 줄임말이며 방문마감을 의미합니다."
+  },
+  {
+    "term": "CRC",
+    "meaning": "\"Clinical Research Coordinator\"의 줄임말이며 임상연구 코디네이터를 의미합니다."
+  },
+  {
+    "term": "CRA",
+    "meaning": "\"Clinical Research Associate, Monitor\"의 줄임말이며 임상연구원 모니터를 의미합니다."
+  },
+  {
+    "term": "CRF",
+    "meaning": "\"Case Report Form\"의 줄임말이며 사례 보고서 양식, 사례 보고서 양식을 의미합니다."
+  },
+  {
+    "term": "CS",
+    "meaning": "\"Clinically Significant\"의 줄임말이며 임상적으로 중요한, 의학과 심리학에서 임상적의미는 치료 효과의 실제적인 중요성입니다. 즉, 치료 효과가 일상 생활에 실제로 진정으로 느껴지고 눈에 띄는 효과가 있는지 여부입니다."
+  },
+  {
+    "term": "CSR",
+    "meaning": "\"Clinical Study Report\"의 줄임말이며 임상연구 보고서, 임상시험 또는 비중재적 연구에서 얻은 결과를 임상적, 통계적 측면에서 통합하여 기술한 문서를 의미합니다."
+  },
+  {
+    "term": "CTM",
+    "meaning": "\"Clinical Trial Manager\"의 줄임말이며 임상시험 관리자를 의미합니다."
+  },
+  {
+    "term": "CV",
+    "meaning": "\"Curriculum Vitae or Cardio Vascular\"의 줄임말이며 이력서 또는 심장혈관을 의미합니다."
+  },
+  {
+    "term": "CRO",
+    "meaning": "\"Contract Research Organization\"의 줄임말이며 계약 연구 기관, 계약 기반으로 아웃소싱 되는 연구 서비스의 형태로 제약, 생명 공학 및 의료 기기 산업을 지원하는 생명 과학 회사 입니다."
+  },
+  {
+    "term": "DCF/R",
+    "meaning": "\"Data Clarification Form, Record(Query)\"의 줄임말이며 데이터 설명 양식, 기록(쿼리)을 의미합니다."
+  },
+  {
+    "term": "DHHS",
+    "meaning": "\"Department of Health and Human Services\"의 줄임말이며 보건 복지부를 의미합니다."
+  },
+  {
+    "term": "DOD",
+    "meaning": "\"Department of Defense\"의 줄임말이며 국방부를 의미합니다."
+  },
+  {
+    "term": "EIR",
+    "meaning": "\"Establishment Inspection Report\"의 줄임말이며 시설점검 보고서를 의미합니다."
+  },
+  {
+    "term": "ECG",
+    "meaning": "\"Electrocardiogram also referred to as EKG\"의 줄임말이며 심전도를 의미합니다."
+  },
+  {
+    "term": "ELA",
+    "meaning": "\"Establishment licenSing Application\"의 줄임말이며 설립허가 신청을 의미합니다."
+  },
+  {
+    "term": "EU",
+    "meaning": "\"European Union\"의 줄임말이며 유럽 연합을 의미합니다."
+  },
+  {
+    "term": "EWG",
+    "meaning": "\"Expert Working Groups\"의 줄임말이며 전문가 워킹 그룹을 의미합니다."
+  },
+  {
+    "term": "FDA",
+    "meaning": "\"Food and Drug Administration\"의 줄임말이며 식품의약국을 의미합니다."
+  },
+  {
+    "term": "FD&C Act",
+    "meaning": "\"Food, Drug, & Cosmetic Act\"의 줄임말이며 식품의약품 및 화장품 법을 의미합니다."
+  },
+  {
+    "term": "FDQ",
+    "meaning": "\"Financial Disclosure Questionnaire\"의 줄임말이며 재무공지 설문지를 의미합니다."
+  },
+  {
+    "term": "HP",
+    "meaning": "\"H. Pylori\"의 줄임말이며 위나선균을 의미합니다."
+  },
+  {
+    "term": "HRT",
+    "meaning": "\"Hormone Replacement Therapy\"의 줄임말이며 호르몬 대체 요법을 의미합니다."
+  },
+  {
+    "term": "GCP",
+    "meaning": "\"Good Clinical Practice\"의 줄임말이며 좋은 임상 시험 실습을 뜻하며, 의약품 임상시험 관리 기준, 국제 품질 표준으로, 정부는 이 표준을 인간 피험자를 대상으로 하는 임상 시험에 대한 규정으로 변경할 수 있습니다. GCP는 인체용 의약품 등록을 위한 기술 요구 사항 조화에 관한 국제 위원회(ICH)를 따르고 임상 연구의 윤리적 측면에 대한 엄격한 지침을 시행합니다."
+  },
+  {
+    "term": "GI",
+    "meaning": "\"Gastrointestinal\"의 줄임말이며 위장을 의미합니다."
+  },
+  {
+    "term": "GLP",
+    "meaning": "\"Good Laboratory Practices\"의 줄임말이며 좋은 실험실 관행을 의미하고, 의약품 비임상시험 관리기준, 실험(비임상) 연구 분야에서 GLP는 인간 또는 인간을 위해 개발 중인 제품 의 균일성, 일관성, 신뢰성 , 재현성 , 품질 및 무결성 을 보장하기 위해 연구실 및 조직에 대한 관리 관리 품질 시스템입니다."
+  },
+  {
+    "term": "GMP",
+    "meaning": "\"Good Manufacturing Practices\"의 줄임말이며 좋은 제조 관행을 의미하고, 의약품 제조 및 품질관리 기준, GMP는 식품 및 음료, 화장품, 의약품, 제조 및 판매의 승인 및 허가를 관리하는 기관에서 권장하는 지침을 준수하기 위해 필요한 관행입니다."
+  },
+  {
+    "term": "GVP",
+    "meaning": "\"Good Pharmacovigilance Practices\"의 줄임말이며 의약품 제조판매 후 안전관리 기준을 의미합니다."
+  },
+  {
+    "term": "GxP",
+    "meaning": "\"Combined term for GCP, GLP, GMP, GVP\"의 줄임말이며 GCP, GLP, GMP, GVP 전체를 통칭하는 용어로, 의약품 개발에서 제조 판매 후 안전관리 과정 중에서 결과 및 과정을 명시하여 품질,안전성, 유효성 확보하기 위한 기준을 의미합니다."
+  },
+  {
+    "term": "ICF",
+    "meaning": "\"Informed Consent Form\"의 줄임말이며 동의서 양식, 임상시험 대상자 설명서, 시험책임자가 임상시험 참여에 대한 대상자의 동의를 받기 위하여 대상자에게 해당 임상시험과 관련한 모든 정보를 담아 제공하는 문서를 의미합니다."
+  },
+  {
+    "term": "ICDIF",
+    "meaning": "\"Informed Consent DocumentlForm\"의 줄임말이며 사전 동의 문서 양식을 의미합니다."
+  },
+  {
+    "term": "ICH",
+    "meaning": "\"International Conference on Harmonization\"의 줄임말이며 국제 의약품 규제 조화 위원회를 의미합니다."
+  },
+  {
+    "term": "IB",
+    "meaning": "\"Investigator Brochure\"의 줄임말이며 조사관 소책자, 약물 개발 및 의료 기기 개발 에서 Investigator's Brochure(IB)는 약물 시험 중에 얻은 연구용 제품(IP 또는 연구 약물)에 대한 정보를 요약한 포괄적인 문서입니다."
+  },
+  {
+    "term": "IDE",
+    "meaning": "\"Investigational Device Exemption\"의 줄임말이며 연구용 기기 면제, 연구용 기기 면제(IDE)는 시판 전 승인(PMA) 신청 또는 시판 전 통지 식품의약국(FDA) 에 제출, 임상 연구는 PMA를 지원하기 위해 가장 자주 수행됩니다."
+  },
+  {
+    "term": "IEC",
+    "meaning": "\"Independent Ethics Committee\"의 줄임말이며 독립 윤리 위원회, 연구에 제안된 방법을 검토하여 연구 윤리를 적용하는 위원회 유형을 의미합니다."
+  },
+  {
+    "term": "IND",
+    "meaning": "\"Investigational New Drug\"의 줄임말이며 연구용 신약을 의미합니다."
+  },
+  {
+    "term": "INV",
+    "meaning": "임상시험 연구자를 의미합니다."
+  },
+  {
+    "term": "INDA",
+    "meaning": "\"Investigational New Drug Application\"의 줄임말이며 연구용 신약 신청, 미국 식품 의약국(FDA)의 IND(Investigational New Drug) 프로그램은 제약회사가 마케팅 신청전에 인체 임상 시험을 시작하고 주 경계를 넘어 (일반적으로 임상 조사자에게) 실험 약물을 선적할 수 있는 허가를 얻는 수단입니다."
+  },
+  {
+    "term": "IP",
+    "meaning": "\"Investigational Product\"의 줄임말이며 임상시험용 의약품을 의미합니다."
+  },
+  {
+    "term": "IRB",
+    "meaning": "\"Institutional Review Board\"의 줄임말이며 기관 검토 위원회, 독립 윤리 위원회(IEC), 윤리 심사 위원회(ERB) 또는 연구 윤리 위원회(REB) 라고도 하는 기관 심사 위원회(IRB)는 연구에 제안된 방법 을 검토하여 연구 윤리를 적용 하는 위원회 유형입니다."
+  },
+  {
+    "term": "IWO",
+    "meaning": "\"Internal Work Order\"의 줄임말이며 내부 업무 요청서를 의미합니다."
+  },
+  {
+    "term": "IWRS/IVRS",
+    "meaning": "\"Interactive Web Response System/Interactive Voice Response System\"의 줄임말이며 상호웹/음성 응답시스템, 무작위 배정, 대상자 등록 그리고 임상시험용의약품 재고관리 도구를 위한 시스템을 의미합니다."
+  },
+  {
+    "term": "KGCP",
+    "meaning": "\"Korea Good Clinical Practice\"의 줄임말이며 국내 임상시험 관리기준을 의미합니다."
+  },
+  {
+    "term": "LD",
+    "meaning": "\"Lethal Dose\"의 줄임말이며 치사량을 의미합니다."
+  },
+  {
+    "term": "MVR",
+    "meaning": "\"Monitor Visit Report\"의 줄임말이며 모니터링 보고서를 의미합니다."
+  },
+  {
+    "term": "MFDS",
+    "meaning": "\"Ministry of Food and Drug Safety\"의 줄임말이며 식품의약품 안전처를 의미합니다."
+  },
+  {
+    "term": "NIS",
+    "meaning": "\"Non‐interventional Study\"의 줄임말이며 비중재적 연구를 의미합니다."
+  },
+  {
+    "term": "NAI",
+    "meaning": "\"No Action Indicated\"의 줄임말이며 표시된 조치 없음을 의미합니다."
+  },
+  {
+    "term": "NCS",
+    "meaning": "\"Not Clinically Significant\"의 줄임말이며 임상적으로는 중하지 않음, CS의 반대를 의미합니다."
+  },
+  {
+    "term": "ND",
+    "meaning": "\"Not Done\"의 줄임말이며 완료되지 않음을 의미합니다."
+  },
+  {
+    "term": "NDA",
+    "meaning": "\"New Drug Application\"의 줄임말이며 신약 신청, FDA(Food and Drug Administration)의 NDA(New Drug Application)는 미국에서 약물 후원자가 FDA가 판매 및 마케팅을 위한 새로운 의약품을 승인하도록 공식적으로 제안하는 수단입니다. 초기 약물 후보의 약 30% 이하가 다년간의 전체 약물 개발 프로세스를 진행하고 성공하면 승인된 NDA로 종료됩니다."
+  },
+  {
+    "term": "NIH",
+    "meaning": "\"National Institute of Health\"의 줄임말이며 국립보건원을 의미합니다."
+  },
+  {
+    "term": "NSE",
+    "meaning": "\"Not Substantially Equivalent\"의 줄임말이며 비실질적 동등성, 새로운 제품(특히 유전자 변형 제품)의 안전성이 이미 안정성이 입증된 유사 제품과 비교하여 평가될 수 없는 것을 의미합니다."
+  },
+  {
+    "term": "OA",
+    "meaning": "\"Osteoarthritis\"의 줄임말이며 골관절염을 의미합니다."
+  },
+  {
+    "term": "OAI",
+    "meaning": "\"Official Action Indicated\"의 줄임말이며 공식 조치표시를 의미합니다."
+  },
+  {
+    "term": "OHRP",
+    "meaning": "\"Office of Human Research Protection\"의 줄임말이며 임상시험 보호 사무소, 미국 보건 복지부(DHHS), 특히 DHHS 비서실의 보건 차관보 사무실 내의 소규모 사무실 로 윤리적 감독을 처리합니다."
+  },
+  {
+    "term": "PI",
+    "meaning": "\"PrinCipal Investigator\"의 줄임말이며 수석 수사관 / 시험 책임자를 의미합니다."
+  },
+  {
+    "term": "PK",
+    "meaning": "\"Pharmacokinetics\"의 줄임말이며 약동학, 살아있는 유기체에 투여되는 물질의 운명을 결정하는 데 전념하는 약리학의 한 분야를 의미합니다."
+  },
+  {
+    "term": "PL/PM",
+    "meaning": "\"Project Leader/Project Manager\"의 줄임말이며 임상시험 프로젝트 별로 지정된 내부 책임자를 의미합니다."
+  },
+  {
+    "term": "PLA",
+    "meaning": "\"Product Licensing Application\"의 줄임말이며 제품 라이선스 신청을 의미합니다."
+  },
+  {
+    "term": "PMA",
+    "meaning": "\"Pre-Market Approval Application\"의 줄임말이며 시판 전 승인 신청을 의미합니다."
+  },
+  {
+    "term": "PMSS",
+    "meaning": "\"Post Marketing Surveillance System\"의 줄임말이며 마케팅 후 감시 시스템을 의미합니다."
+  },
+  {
+    "term": "QA",
+    "meaning": "\"Quality Assurance\"의 줄임말이며 품질 보증 즉, 임상시험,  자료의 수집,  기록 및 문서 작성,  보고 등에 관한 모든 사항이 GCP와 관계 법령을 준수하였는지 여부를 사전에 계획된 바에 따라 체계적으로 확인하는 행위를 의미합니다."
+  },
+  {
+    "term": "QC",
+    "meaning": "\"Quality Control\"의 줄임말이며 품질 관리 즉, 임상시험과 관련한 행위나 활동이 적정한 수준에서 이루어지고 있음을 품질보증체계에 따라 구체적으로 검증하는 행위 및 그 기법을 의미합니다."
+  },
+  {
+    "term": "QD",
+    "meaning": "\"Quaque die (every day)\"의 줄임말이며 매일을 의미합니다."
+  },
+  {
+    "term": "QID",
+    "meaning": "\"Quaque in die (Four times per day)\"의 줄임말이며 하루 네번을 의미합니다."
+  },
+  {
+    "term": "R&D",
+    "meaning": "\"Research and Development\"의 줄임말이며 연구 및 개발을 의미합니다."
+  },
+  {
+    "term": "RCT",
+    "meaning": "\"Random Controlled Trial\"의 줄임말이며 무작위 대조 실험을 의미하며, 연구 치료가 인간 건강에 영향을 미친다는 강력한 증거를 제공할 수 있습니다. 현재 일부 2상 및 3상 약물 시험은 무작위, 이중 블라인드 및 위약 대조로 설계되어 있습니다. * RCT가 아니면 임상시험이 과학적이라고 하지 않습니다."
+  },
+  {
+    "term": "RMP",
+    "meaning": "\"Risk Management Plan\"의 줄임말이며 위해성 관리 계획을 의미합니다."
+  },
+  {
+    "term": "SAE",
+    "meaning": "\"Serious Adverse Event\"의 줄임말이며 심각한 이상반응을 의미합니다."
+  },
+  {
+    "term": "SAP",
+    "meaning": "\"Statistical Analysis Plan\"의 줄임말이며 통계 분석계획, 임상시험 데이터(또는 연구 데이터)  분석에 사용되는 모든 분석 방법에 대한 세부적인 기술을 포함하고 있는 구체적인 계획으로, 임상시험계획서에 기술된 모든 분석을 포함을 의미합니다."
+  },
+  {
+    "term": "SAS",
+    "meaning": "\"Statistical Analysis Systems\"의 줄임말이며 통계 분석 시스템을 의미합니다."
+  },
+  {
+    "term": "SC",
+    "meaning": "\"Study Coordinator or Steering Committee\"의 줄임말이며 연구 코디네이터 또는 운영위원회를 의미합니다."
+  },
+  {
+    "term": "SD",
+    "meaning": "\"Source Documents\"의 줄임말이며 소스 문서, 임상 시험 위해 수집한 데이터를 최초 기록하는 문서를 의미합니다."
+  },
+  {
+    "term": "SDV",
+    "meaning": "\"Source Documentation Verification\"의 줄임말이며 소스 문서 확인을 의미합니다."
+  },
+  {
+    "term": "SE",
+    "meaning": "\"Substantial Equivalence\"의 줄임말이며 실질적 동등성, 새로운 제품(특히 유전자 변형 제품)의 안전성이 이미 안정성이 입증된 유사 제품과 비교하여 평가되는 것을 의미합니다."
+  },
+  {
+    "term": "SI",
+    "meaning": "\"Sub-Investigator\"의 줄임말이며 부 수사관을 의미합니다."
+  },
+  {
+    "term": "SIV",
+    "meaning": "\"Study Initiation Visit\"의 줄임말이며 방문 연구 시작을 의미합니다."
+  },
+  {
+    "term": "SMO",
+    "meaning": "\"Site Management Organization\"의 줄임말이며 현장관리 조직을 의미합니다."
+  },
+  {
+    "term": "SNDA",
+    "meaning": "\"Supplemental New Drug Application\"의 줄임말이며 추가 신약 신청을 의미합니다."
+  },
+  {
+    "term": "SOP",
+    "meaning": "\"Standard Operating Procedures\"의 줄임말이며 표준운영 절차, 특정 업무를 표준화된 방법에 따라 일관되게 실시할 목적으로 해당 절차 및 수행 방법 등을 상세하게 적은 문서를 의미합니다."
+  },
+  {
+    "term": "VAERS",
+    "meaning": "\"Vaccine Adverse Event Reporting System\"의 줄임말이며 백신 이상반응 보고 시스템을 의미합니다."
+  },
+  {
+    "term": "Val",
+    "meaning": "\"Voluntary Action Required\"의 줄임말이며 자발적 조치 실행을 의미합니다."
+  },
+  {
+    "term": "WHO",
+    "meaning": "\"World Health Organization\"의 줄임말이며 세계 보건 기구를 의미합니다."
+  }
+]
