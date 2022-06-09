@@ -26,7 +26,8 @@ class ActionProvider {
       const {
         data: { items },
       } = await axios.get(
-        "https://cors-anywhere.herokuapp.com/https://openapi.naver.com/v1/search/webkr.json",
+        "https://openapi.naver.com/v1/search/webkr.json",
+        // "https://cors-anywhere.herokuapp.com/https://openapi.naver.com/v1/search/webkr.json"
         {
           params: {
             query: search,
@@ -42,14 +43,7 @@ class ActionProvider {
         { mode: "cors" }
       );
 
-      // const removeTags = items[0].description.replace(/<(\/b|b)([^>]*)>/gi, "");
-
-      const result = items[0].description;
-
-      const message = this.createChatbotMessage(
-        // eslint-disable-next-line react/no-danger
-        <div dangerouslySetInnerHTML={{ __html: result }} />
-      );
+      const message = this.createChatbotMessage(items[0].description);
 
       this.setState((prev) => ({
         ...prev,
