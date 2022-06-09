@@ -26,8 +26,7 @@ class ActionProvider {
       const {
         data: { items },
       } = await axios.get(
-        "https://openapi.naver.com/v1/search/webkr.json",
-        // "https://cors-anywhere.herokuapp.com/https://openapi.naver.com/v1/search/webkr.json"
+        "https://cors-anywhere.herokuapp.com/https://openapi.naver.com/v1/search/webkr.json",
         {
           params: {
             query: search,
