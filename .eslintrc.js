@@ -49,5 +49,6 @@ module.exports = {
     ],
     "import/no-extraneous-dependencies": ["error", { devDependencies: true }],
     "comma-dangle": "off",
+    "@typescript-eslint/ban-ts-comment": "off",
   },
 };

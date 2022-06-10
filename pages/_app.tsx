@@ -1,9 +1,7 @@
 import type { AppProps } from "next/app";
-import Chatbot from "react-chatbot-kit";
 
-import config from "../bot/config.js";
-import MessageParser from "../bot/MessageParser.js";
-import ActionProvider from "../bot/ActionProvider.js";
+// @ts-ignore
+import ChatbotContainer from "../components/ChatbotContainer.tsx";
 
 import "../styles/globals.css";
 import "react-chatbot-kit/build/main.css";
@@ -14,11 +12,7 @@ function MyApp({ Component, pageProps }: AppProps) {
   return (
     <>
       <Component {...pageProps} />
-      <Chatbot
-        config={config}
-        messageParser={MessageParser}
-        actionProvider={ActionProvider}
-      />
+      <ChatbotContainer />
     </>
   );
 }

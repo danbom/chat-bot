@@ -9,7 +9,7 @@ const HeaderContainer = styled.div`
   );
   width: 100%;
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-end;
   align-items: center;
   padding: 1.4rem;
 
@@ -23,7 +23,7 @@ const HeaderContainer = styled.div`
 function Header() {
   return (
     <HeaderContainer>
-      <i className="ri-arrow-left-s-line" />
+      {/* <i className="ri-arrow-left-s-line" /> */}
       <i className="ri-close-line" />
     </HeaderContainer>
   );
