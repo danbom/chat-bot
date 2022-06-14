@@ -1,6 +1,7 @@
 /* eslint-disable operator-linebreak */
 import { useState, useEffect } from "react";
 import styled from "styled-components";
+import axios from "axios";
 
 interface Bot {
   isBot?: boolean;
@@ -36,6 +37,15 @@ const ChatMessageContainer = styled.div<Bot>`
   line-height: 1.3rem;
   word-break: keep-all;
   overflow-x: hidden;
+  white-space: pre-wrap;
+
+  .text {
+    overflow: ${(props) => (props.isLong ? "hidden" : "")};
+    text-overflow: ${(props) => (props.isLong ? "ellipsis" : "")};
+    display: ${(props) => (props.isLong ? "-webkit-box" : "")};
+    -webkit-line-clamp: ${(props) => (props.isLong ? "3" : "")};
+    -webkit-box-orient: ${(props) => (props.isLong ? "vertical" : "")};
+  }
 
   .see-all {
     display: ${(props) => (props.isBot && props.isLong ? "block" : "none")};
@@ -66,25 +76,52 @@ const FeedbackContainer = styled(ChatMessageContainer)`
 `;
 
 function ChatMessage({ message, bot }: any) {
-  const [msg, setMsg] = useState(message.substring(0, 100));
-  const [isLong, setIsLong] = useState(!!(bot && message.length > 100));
+  const parseMessage = (m: any) => {
+    const list = m.messageList.map(
+      (_m: any) =>
+        _m.highlight === "Y"
+          ? `<b>${_m.message.toString()}</b>`
+          : _m.message.toString()
+      // eslint-disable-next-line function-paren-newline
+    );
+    return list.join("\n\n");
+  };
+
+  const [msg, setMsg] = useState(
+    message.messageList ? parseMessage(message) : message
+  );
+  const [isLong, setIsLong] = useState(!!bot && message.messageList);
   const [feedback, setFeedback] = useState(false);
 
   const seeAllText = () => {
-    setMsg(message);
+    // setMsg(message);
     setIsLong(false);
   };
 
-  const sendFeedback = (str: string, fdb: string) => {
-    console.log(`"${str}"에 대한 피드백 : ${fdb}`);
+  const sendFeedback = async (fdb: string) => {
+    console.log(`"${message.response_idx}"에 대한 피드백 : ${fdb}`);
     alert("피드백을 전송했습니다. 감사합니다!");
+    const data = await axios.post(
+      "https://1a5wyb1w3i.execute-api.ap-northeast-2.amazonaws.com/chatbot_dev/chat_message_dev",
+      JSON.stringify({
+        msg_type: "E",
+        evaluation_idx: message.response_idx,
+        evaluation_result: fdb,
+        session_key: "",
+      }),
+      {
+        headers: {
+          "x-api-key": "9uqJbpLQLB1LMyOm3ByDy83eDNYoOt8T79hX5qG9",
+          "Content-Type": "application/json",
+        },
+      }
+    );
+
+    console.log(data);
   };
 
   useEffect(() => {
-    if (
-      !message.includes("궁금한 내용을 입력해주세요.") &&
-      !message.includes("검색 내용을 찾을 수 없습니다!")
-    ) {
+    if (message.messageList) {
       setFeedback(true);
     }
   }, []);
@@ -92,7 +129,7 @@ function ChatMessage({ message, bot }: any) {
   return (
     <EntireContainer isBot={bot} isLong={isLong}>
       <ChatMessageContainer isBot={bot} isLong={isLong}>
-        <div dangerouslySetInnerHTML={{ __html: msg }} />
+        <div className="text" dangerouslySetInnerHTML={{ __html: msg }} />
         {bot && (
           <div
             className="see-all"
@@ -113,7 +150,7 @@ function ChatMessage({ message, bot }: any) {
             isLong={false}
             onClick={(e) => {
               e.preventDefault();
-              sendFeedback(message, "GOOD!");
+              sendFeedback("Y");
             }}
           >
             👍
@@ -123,7 +160,7 @@ function ChatMessage({ message, bot }: any) {
             isLong={false}
             onClick={(e) => {
               e.preventDefault();
-              sendFeedback(message, "BAD!");
+              sendFeedback("N");
             }}
           >
             👎

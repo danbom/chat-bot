@@ -23,24 +23,24 @@ class ActionProvider {
     const SECRET_KEY = "GKDwG1g0rs";
     const search = msg;
     try {
-      const {
-        data: { items },
-      } = await axios.get(
-        "https://cors-anywhere.herokuapp.com/https://openapi.naver.com/v1/search/webkr.json",
+      const data = await axios.post(
+        "https://1a5wyb1w3i.execute-api.ap-northeast-2.amazonaws.com/chatbot_dev/chat_message_dev",
+        JSON.stringify({
+          msg_type: "Q",
+          msg: search,
+          session_key: "",
+        }),
         {
-          params: {
-            query: search,
-            display: 1,
-          },
           headers: {
-            "X-Naver-Client-Id": ID_KEY,
-            "X-Naver-Client-Secret": SECRET_KEY,
+            "x-api-key": "9uqJbpLQLB1LMyOm3ByDy83eDNYoOt8T79hX5qG9",
+            "Content-Type": "application/json",
           },
         },
         { mode: "cors" }
       );
 
-      const message = this.createChatbotMessage(items[0].description);
+      console.log(JSON.parse(data.data.body));
+      const message = this.createChatbotMessage(JSON.parse(data.data.body));
 
       this.setState((prev) => ({
         ...prev,
