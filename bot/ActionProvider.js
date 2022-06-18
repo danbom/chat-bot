@@ -48,7 +48,6 @@ class ActionProvider {
       }));
     } catch (error) {
       console.log(error);
-      // eslint-disable-next-line operator-linebreak
       const message = this.createChatbotMessage(
         `검색 내용을 찾을 수 없습니다! 또는 권한을 확인하세요. <a href=${"https://cors-anywhere.herokuapp.com/"}>링크 가기</a>`
       );
@@ -83,7 +82,6 @@ class ActionProvider {
   }
 
   handleDontKnow() {
-    // eslint-disable-next-line operator-linebreak
     const message =
       this.createChatbotMessage("죄송합니다. 이해하지 못했습니다.");
 

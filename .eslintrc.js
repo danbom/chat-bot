@@ -34,13 +34,8 @@ module.exports = {
     "no-confusing-arrow": "off",
     "react/jsx-curly-newline": "off",
     indent: "off",
-    "react/jsx-filename-extension": [
-      1,
-      { extensions: [".js", ".jsx", ".tsx", ".ts"] }, //jsx사용가능한 확장자 설정
-    ],
-    "import/extensions": [
-      "off", //import 시 확장자명은 사용하지 않는다.
-    ],
+    "react/jsx-filename-extension": "off",
+    "import/extensions": "off",
     "react/function-component-definition": [
       2,
       {
@@ -49,6 +44,8 @@ module.exports = {
     ],
     "import/no-extraneous-dependencies": ["error", { devDependencies: true }],
     "comma-dangle": "off",
-    "@typescript-eslint/ban-ts-comment": "off",
+    "import/no-unresolved": "off",
+    "operator-linebreak": "off",
+    "function-paren-newline": "off",
   },
 };

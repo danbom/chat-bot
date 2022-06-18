@@ -1,10 +1,10 @@
-import { useState } from "react";
 import Chatbot from "react-chatbot-kit";
 import styled from "styled-components";
 
 import config from "../bot/config.js";
 import MessageParser from "../bot/MessageParser.js";
 import ActionProvider from "../bot/ActionProvider.js";
+import { useChatbotState, useChatbotDispatch } from "../context/ChatbotContext";
 
 const ChatbotIcon = styled.div`
   position: fixed;
@@ -38,20 +38,19 @@ const ChatbotIcon = styled.div`
 `;
 
 function ChatbotContainer() {
-  const [open, setOpen] = useState(false);
-  return open ? (
+  const state = useChatbotState();
+  const dispatch = useChatbotDispatch();
+
+  const toggleOpened = () => dispatch({ type: "TOGGLE_OPENDED" });
+
+  return state.isOpened ? (
     <Chatbot
       config={config}
       messageParser={MessageParser}
       actionProvider={ActionProvider}
     />
   ) : (
-    <ChatbotIcon
-      onClick={(e) => {
-        e.preventDefault();
-        setOpen(true);
-      }}
-    >
+    <ChatbotIcon onClick={toggleOpened}>
       <i className="ri-wechat-fill" />
     </ChatbotIcon>
   );

@@ -1,4 +1,3 @@
-/* eslint-disable operator-linebreak */
 import { useState, useEffect } from "react";
 import styled from "styled-components";
 import axios from "axios";
@@ -77,12 +76,10 @@ const FeedbackContainer = styled(ChatMessageContainer)`
 
 function ChatMessage({ message, bot }: any) {
   const parseMessage = (m: any) => {
-    const list = m.messageList.map(
-      (_m: any) =>
-        _m.highlight === "Y"
-          ? `<b>${_m.message.toString()}</b>`
-          : _m.message.toString()
-      // eslint-disable-next-line function-paren-newline
+    const list = m.messageList.map((_m: any) =>
+      _m.highlight === "Y"
+        ? `<b>${_m.message.toString()}</b>`
+        : _m.message.toString()
     );
     return list.join("\n\n");
   };

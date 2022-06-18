@@ -1,5 +1,7 @@
 import styled from "styled-components";
 
+import { useChatbotDispatch } from "../context/ChatbotContext";
+
 const HeaderContainer = styled.div`
   background: rgb(92, 130, 255);
   background: linear-gradient(
@@ -15,16 +17,20 @@ const HeaderContainer = styled.div`
 
   .ri-close-line,
   .ri-arrow-left-s-line {
+    cursor: pointer;
     font-size: 1.5rem;
     color: #ffffff;
   }
 `;
 
 function Header() {
+  const dispatch = useChatbotDispatch();
+
+  const toggleOpened = () => dispatch({ type: "TOGGLE_OPENDED" });
+
   return (
     <HeaderContainer>
-      {/* <i className="ri-arrow-left-s-line" /> */}
-      <i className="ri-close-line" />
+      <i className="ri-close-line" role="presentation" onClick={toggleOpened} />
     </HeaderContainer>
   );
 }
