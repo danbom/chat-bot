@@ -1,12 +1,22 @@
 import axios from "axios";
 
+import { useChatbotState, useChatbotDispatch } from "../context/ChatbotContext";
+
 import terms from "../data/terms.json";
 
 class ActionProvider {
-  constructor(createChatbotMessage, setStateFunc, createClientMessage) {
+  constructor(
+    createChatbotMessage,
+    setStateFunc,
+    createClientMessage,
+    state,
+    dispatch
+  ) {
     this.createChatbotMessage = createChatbotMessage;
     this.setState = setStateFunc;
     this.createClientMessage = createClientMessage;
+    this.state = useChatbotState();
+    this.dispatch = useChatbotDispatch();
   }
 
   handleHello() {
@@ -19,16 +29,25 @@ class ActionProvider {
   }
 
   handleSearch = async (msg) => {
-    const ID_KEY = "zbVgYGcd26CBZlj_XKtv";
-    const SECRET_KEY = "GKDwG1g0rs";
+    // const ID_KEY = "zbVgYGcd26CBZlj_XKtv";
+    // const SECRET_KEY = "GKDwG1g0rs";
     const search = msg;
+
+    // const state = useChatbotState(); //TODO : 여기서 에러남
+    // const dispatch = useChatbotDispatch();
+
     try {
+      console.log(`세션키 : ${this.state.sessionkey}`);
+
+      const setSessionkey = () =>
+        this.dispatch({ type: "SET_SESSIONKEY", sessionkey: "" });
+
       const data = await axios.post(
         "https://1a5wyb1w3i.execute-api.ap-northeast-2.amazonaws.com/chatbot_dev/chat_message_dev",
         JSON.stringify({
           msg_type: "Q",
           msg: search,
-          session_key: "",
+          session_key: this.state.sessionkey,
         }),
         {
           headers: {
@@ -39,17 +58,17 @@ class ActionProvider {
         { mode: "cors" }
       );
 
-      console.log(JSON.parse(data.data.body));
       const message = this.createChatbotMessage(JSON.parse(data.data.body));
+      // setSessionkey();
 
       this.setState((prev) => ({
         ...prev,
         messages: [...prev.messages, message],
       }));
     } catch (error) {
-      console.log(error);
+      console.log(`에러 : ${error}`);
       const message = this.createChatbotMessage(
-        `검색 내용을 찾을 수 없습니다! 또는 권한을 확인하세요. <a href=${"https://cors-anywhere.herokuapp.com/"}>링크 가기</a>`
+        `에러가 발생했습니다! 관리자에게 문의해주세요. 세션키 : ${this.state.sessionkey}`
       );
 
       this.setState((prev) => ({

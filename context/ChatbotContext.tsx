@@ -13,6 +13,7 @@ import {
 // 상태를 위한 타입
 type State = {
   isOpened: boolean;
+  sessionkey: string;
 };
 
 // 모든 액션들을 위한 타입
@@ -20,7 +21,7 @@ type Action =
   // | { type: "SET_COUNT"; count: number }
   // | { type: "SET_TEXT"; text: string }
   // | { type: "SET_COLOR"; color: Color }
-  { type: "TOGGLE_OPENDED" };
+  { type: "TOGGLE_OPENDED" } | { type: "SET_SESSIONKEY"; sessionkey: string };
 
 // 디스패치를 위한 타입 (Dispatch 를 리액트에서 불러올 수 있음), 액션들의 타입을 Dispatch 의 Generics로 설정
 type ChatbotDispatch = Dispatch<Action>;
@@ -37,6 +38,11 @@ function reducer(state: State, action: Action): State {
         ...state,
         isOpened: !state.isOpened,
       };
+    case "SET_SESSIONKEY":
+      return {
+        ...state,
+        sessionkey: action.sessionkey,
+      };
     default:
       throw new Error("Unhandled action");
   }
@@ -46,7 +52,8 @@ function reducer(state: State, action: Action): State {
 // SampleStateContext.Provider 와 SampleDispatchContext.Provider 로 children 을 감싸서 반환합니다.
 export function ChatbotProvider({ children }: { children: ReactNode }) {
   const [state, dispatch] = useReducer(reducer, {
-    isOpened: true,
+    isOpened: false,
+    sessionkey: "",
   });
 
   return (

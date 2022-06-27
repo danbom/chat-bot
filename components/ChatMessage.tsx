@@ -2,6 +2,8 @@ import { useState, useEffect } from "react";
 import styled from "styled-components";
 import axios from "axios";
 
+import { useChatbotState, useChatbotDispatch } from "../context/ChatbotContext";
+
 interface Bot {
   isBot?: boolean;
   isLong: boolean;
@@ -75,6 +77,12 @@ const FeedbackContainer = styled(ChatMessageContainer)`
 `;
 
 function ChatMessage({ message, bot }: any) {
+  const state = useChatbotState();
+  const dispatch = useChatbotDispatch();
+
+  const setSessionkey = (sessionKey: string) =>
+    dispatch({ type: "SET_SESSIONKEY", sessionkey: sessionKey });
+
   const parseMessage = (m: any) => {
     const list = m.messageList.map((_m: any) =>
       _m.highlight === "Y"
@@ -86,6 +94,7 @@ function ChatMessage({ message, bot }: any) {
 
   const [msg, setMsg] = useState(
     message.messageList ? parseMessage(message) : message
+    // setSessionkey(message.session_key)
   );
   const [isLong, setIsLong] = useState(!!bot && message.messageList);
   const [feedback, setFeedback] = useState(false);
@@ -104,7 +113,7 @@ function ChatMessage({ message, bot }: any) {
         msg_type: "E",
         evaluation_idx: message.response_idx,
         evaluation_result: fdb,
-        session_key: "",
+        session_key: state.sessionkey,
       }),
       {
         headers: {
@@ -113,8 +122,6 @@ function ChatMessage({ message, bot }: any) {
         },
       }
     );
-
-    console.log(data);
   };
 
   useEffect(() => {
