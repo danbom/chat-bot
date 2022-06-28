@@ -1,6 +1,5 @@
 import { createChatBotMessage } from "react-chatbot-kit";
 
-import Header from "../components/Header.tsx";
 import ChatMessage from "../components/ChatMessage.tsx";
 
 const botName = "아임트라이얼 챗봇";
@@ -13,7 +12,7 @@ const config = {
   ],
   customComponents: {
     // Replaces the default header
-    header: () => <Header />,
+    header: () => <div />,
     // Replaces the default bot avatar
     botAvatar: (props) => <div {...props} />,
     // Replaces the default bot chat message container
