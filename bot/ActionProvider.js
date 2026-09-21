@@ -43,7 +43,7 @@ class ActionProvider {
         this.dispatch({ type: "SET_SESSIONKEY", sessionkey: "" });
 
       const data = await axios.post(
-        "https://1a5wyb1w3i.execute-api.ap-northeast-2.amazonaws.com/chatbot_dev/chat_message_dev",
+        `${process.env.REACT_APP_API_URL}/chatbot_dev/chat_message_dev`,
         JSON.stringify({
           msg_type: "Q",
           msg: search,
@@ -51,7 +51,7 @@ class ActionProvider {
         }),
         {
           headers: {
-            "x-api-key": "9uqJbpLQLB1LMyOm3ByDy83eDNYoOt8T79hX5qG9",
+            "x-api-key": process.env.REACT_APP_API_KEY,
             "Content-Type": "application/json",
           },
         },
